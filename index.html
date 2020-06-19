@@ -6,7 +6,7 @@
 		</title>
 		<link href="reset.css" rel="stylesheet" type="text/css" media="screen" />
 		<style>
-			#navbar {
+			nav {
 				font-family: Arial;
 				font-size: 15px;
 				padding-top: 10px;
@@ -31,6 +31,8 @@
 				padding-bottom: 10px;
 			}
 			#google-apps:hover {
+				width: 31px;
+				height: auto;
 			}
 			#sign-in {
 				position: relative;
@@ -48,10 +50,46 @@
 				text-decoration: underline;
 				color: blueviolet;
 			}
+			#google-logo {
+				max-width: 100%;
+				display: block;
+				margin: 28% auto 3px;
+			}
+			#searchbar {
+				display: block;
+				height: 20px;
+				margin: 0px auto 0px;
+			}
+			#google-search {
+				display: block;
+				float: left;
+				margin: 9px 15px 0px 35%;
+			}
+			#im-feeling-lucky {
+				display: block;
+				float: right;
+				margin: 9px 35% 0px 15px;
+			}
+			footer {
+				font-family: Arial;
+				font-size: 15px;
+				padding: 365px 20px 0px;
+				border-bottom: solid;
+				border-bottom-color: grey;
+				border-bottom-width: 1px;
+			}
+			.footer-part-left {
+				float: left;
+				padding: 15px 10px 10px;
+			}
+			.footer-part-right {
+				float: right;
+				padding: 15px 10px 10px;
+			}
 		</style>
 	</head>
 	<body>
-		<div id="navbar">
+		<nav>
 			<div class="navbar-part-left">
 				<a href="" target="_blank">About</a>
 			</div>
@@ -78,6 +116,48 @@
 			<div class="navbar-part-right">
 				<a href="" target="_blank">Gmail</a>
 			</div>
-		</div>
+		</nav>
+		<main>
+			<div>
+				<img
+					id="google-logo"
+					src="/images/Google-Logo.png"
+					alt="The Google Logo"
+				/>
+			</div>
+			<div>
+				<input type="text" id="searchbar" name="searchbar" size="40" />
+			</div>
+			<div>
+				<button id="google-search" type="button">
+					Google Search
+				</button>
+			</div>
+			<div>
+				<button id="im-feeling-lucky" type="button">
+					I'm feeling lucky
+				</button>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-part-left">
+				<a href="" target="_blank">Advertising</a>
+			</div>
+			<div class="footer-part-left">
+				<a href="" target="_blank">Business</a>
+			</div>
+			<div class="footer-part-left">
+				<a href="" target="_blank">How Search works</a>
+			</div>
+			<div class="footer-part-right">
+				<a href="" target="_blank">Settings</a>
+			</div>
+			<div class="footer-part-right">
+				<a href="" target="_blank">Terms</a>
+			</div>
+			<div class="footer-part-right">
+				<a href="" target="_blank">Privacy</a>
+			</div>
+		</footer>
 	</body>
 </html>
