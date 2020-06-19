@@ -5,10 +5,79 @@
 			Google
 		</title>
 		<link href="reset.css" rel="stylesheet" type="text/css" media="screen" />
-		<style></style>
+		<style>
+			#navbar {
+				font-family: Arial;
+				font-size: 15px;
+				padding-top: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			.navbar-part-left {
+				float: left;
+				display: block;
+				padding: 13px;
+			}
+			.navbar-part-right {
+				float: right;
+				display: block;
+				padding: 13px;
+			}
+			#google-apps {
+				position: relative;
+				bottom: 7px;
+				width: 30px;
+				height: auto;
+				padding-bottom: 10px;
+			}
+			#google-apps:hover {
+			}
+			#sign-in {
+				position: relative;
+				bottom: 4px;
+				background-color: blue;
+				color: white;
+				border-radius: 10%;
+				font-size: 100%;
+			}
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			a:hover {
+				text-decoration: underline;
+				color: blueviolet;
+			}
+		</style>
 	</head>
 	<body>
-		<nav></nav>
-		<h1>HAHAHA</h1>
+		<div id="navbar">
+			<div class="navbar-part-left">
+				<a href="" target="_blank">About</a>
+			</div>
+			<div class="navbar-part-left">
+				<a href="" target="_blank">Store</a>
+			</div>
+			<div class="navbar-part-right">
+				<button id="sign-in" type="button">
+					Sign in
+				</button>
+			</div>
+			<div class="navbar-part-right">
+				<a href="" target="_blank">
+					<img
+						id="google-apps"
+						src="/images/Google-Apps.png"
+						alt="Google Apps"
+					/>
+				</a>
+			</div>
+			<div class="navbar-part-right">
+				<a href="" target="_blank">Images</a>
+			</div>
+			<div class="navbar-part-right">
+				<a href="" target="_blank">Gmail</a>
+			</div>
+		</div>
 	</body>
 </html>
